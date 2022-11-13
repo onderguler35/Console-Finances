@@ -99,10 +99,10 @@ var worstMonth;
 
 
 //using a for loop so I can iterate through the arrays to calculate required report items.
-for (var i = 0; i < 86; i++) {
+for (var i = 0; i < totalNrMonths; i++) {
     totalRevenue = totalRevenue + finances[i][1];
     //if we keep the current loop, when i=85 adding 1 below will result undefined, so adding a if clause to make sure the difference calculation is done only up to 84.
-    if (i < 85) {
+    if (i < totalNrMonths-1) {
         //calculating each months profit/loss change by subtracting next month from the current month in the loop using i variable to index correct values.
         monthlyChange = (finances[i + 1][1] - finances[i][1]);
         //adding each months change to the sum to get the total sum.
@@ -119,7 +119,7 @@ for (var i = 0; i < 86; i++) {
 }
 
 //calculating the average change between months by dividing the total change to the number of changes between months. 
-changeAverage = totalChange / 85
+changeAverage = totalChange / (totalNrMonths-1)
 
 //concatenating all the results to print into the console as required
 
