@@ -12,7 +12,7 @@ https://onderguler35.github.io/Console-Finances/
 
 The website can be accessed through the link above. Please remember to open the browser console to see the coding in action.
 
-![website appearance snapshot](financeChallenge.JPG) 
+![website appearance snapshot](assets/images/financeChallenge.JPG) 
 
 
 ## Credits
